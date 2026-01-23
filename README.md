@@ -14,7 +14,7 @@ pycsep: 0.7.0
 
 cartopy: 0.24.0
 
-To run this reproducibility software package, I reccomend that users first install a pyCSEP environment on their machines ('nc-ndc' in this example; see below). The easiest way to install pyCSEP is via `conda`, although it can also be installed using `pip` and by building directly from source (see the [Documentation on how to install pyCSEP](https://docs.cseptesting.org/getting_started/installing.html)).
+To run this reproducibility software package, I reccomend that users first install a pyCSEP environment on their machines ('nc-ndc' in this example; see below). The easiest way to install pyCSEP is via `conda`, although it can also be installed using `pip` or by building it directly from source (see the [Documentation on how to install pyCSEP](https://docs.cseptesting.org/getting_started/installing.html)).
 
 ```
 conda create -n nc-ndc
@@ -30,9 +30,9 @@ conda install requests
 ```
 
 ## Forecast database
-Forecast files, in HDF5 format, are freely available under the open access Creative license on [Zenodo](https://zenodo.org/records/15076187) and via the [CSEP website](https://cseptesting.org/grid-based-forecasts/). However, given the large size of this database (over 65TB), we provide preprocessed input files, which can be found in the `preprocessed_inputs` folder.
+Forecast files, in HDF5 format, are freely available under the open access Creative license on [Zenodo](https://zenodo.org/records/15076187) and via the [CSEP website](https://cseptesting.org/grid-based-forecasts/). However, given the large size of this database (over 65TB), I provide preprocessed input files, which can be found in the `preprocessed_inputs` folder.
 
-Shall the user wishes to download the forecast database, they do so via:
+Shall the user wishes to download the forecast database from Zenodo, they can do so via:
 
 ```
 pip3 install zenodo_get
@@ -46,4 +46,4 @@ Once the user is "within" the `nc-ncd` environment, with python3 and the `reques
 git clone https://github.com/bayonato89/reproducibility_next_day_california.git
 bash ./run_all.sh
 ```
-On a modern desktop computer, this could take up to one hour.
+On a modern desktop computer, running this code could take up to one hour.
