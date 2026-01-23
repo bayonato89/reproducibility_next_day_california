@@ -50,7 +50,7 @@ git clone https://github.com/bayonato89/reproducibility_next_day_california.git
 cd reproducibility_next_day_california
 bash ./run_all.sh
 ```
-## Windows users#
+## Windows users
 I recommend users to install WSL to execute this code. "The Windows Subsystem for Linux (WSL) lets developers install a Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup." Instructions on how to install WSL can be found in the [WSL website](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 On a modern desktop computer, running this reproducibility software could take up to one hour.
