@@ -42,6 +42,9 @@ pip3 install zenodo_get
 zenodo_get 15076187
 ```
 
+## Forecast official names
+Please note that the official CSEP names for these models, which have been used in Zenodo, the CSEP website, and this reproducibility software package, have been modified in Bayona et al. (2026, in review) to make it easier for users to understand their unique characteristics. Table 2 in the supplementary material for this article contains both the original and the new names.
+
 ## Running instructions
 Once the user is "within" the `nc-ncd` environment, they can run the experiment by simply typing:
 
