@@ -32,6 +32,19 @@ conda install seaborn
 conda install geopandas
 ```
 
+## Running instructions
+Once the user is "within" the `nc-ncd` environment, they can run the experiment by simply typing:
+
+```
+git clone https://github.com/bayonato89/reproducibility_next_day_california.git
+cd reproducibility_next_day_california
+bash ./run_all.sh
+```
+
+## Windows users
+I recommend users to install WSL to run this reproducibility software package. "The Windows Subsystem for Linux (WSL) lets developers install a Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup." Instructions on how to install WSL can be found in the [WSL website](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+On a modern desktop computer, running this reproducibility software could take up to one hour.
 ## Forecast database
 Forecast files, in HDF5 format, are freely available under the open access Creative license on [Zenodo](https://zenodo.org/records/15076187) and via the [CSEP website](https://cseptesting.org/grid-based-forecasts/). However, given the large size of this database (over 65TB), I provide preprocessed input files, which can be found in the `preprocessed_inputs` folder.
 
@@ -44,16 +57,3 @@ zenodo_get 15076187
 
 ## Forecast official names
 Please note that the official CSEP names for these models, which have been used in Zenodo, the CSEP website, and this reproducibility software package, have been modified in Bayona et al. (2026, in review) to make it easier for users to understand their unique characteristics. Table 2 in the supplementary material for this article contains both the original and the new names.
-
-## Running instructions
-Once the user is "within" the `nc-ncd` environment, they can run the experiment by simply typing:
-
-```
-git clone https://github.com/bayonato89/reproducibility_next_day_california.git
-cd reproducibility_next_day_california
-bash ./run_all.sh
-```
-## Windows users
-I recommend users to install WSL to run this reproducibility software package. "The Windows Subsystem for Linux (WSL) lets developers install a Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup." Instructions on how to install WSL can be found in the [WSL website](https://learn.microsoft.com/en-us/windows/wsl/install).
-
-On a modern desktop computer, running this reproducibility software could take up to one hour.
