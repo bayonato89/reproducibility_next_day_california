@@ -815,7 +815,7 @@ end_epoch_STEP = csep.utils.time_utils.strptime_to_utc_epoch(str(max(forecast_da
 filters_STEP = [f'origin_time >= {start_epoch_STEP}', f'origin_time < {end_epoch_STEP}']
 with open ('data/catalogues/catalogue_2007_2018.obj', 'rb') as obj:
     catalogue_STEP = pickle.load(obj)
-catalogue_STEP = catalogue_STEP.filter(filters_STEP).filter_spatial(region=STEPJAVA_forecast.region, update_stats=False, in_place=True)
+catalogue_STEP = catalogue_STEP.filter(filters_STEP)
 
 
 # In[22]:
