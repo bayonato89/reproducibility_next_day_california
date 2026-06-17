@@ -37,7 +37,7 @@ Once the user is "within" the `nc-ncd` environment, they can run the experiment 
 
 ```
 git clone https://github.com/bayonato89/reproducibility_next_day_california.git
-cd reproducibility_next_day_california
+cd reproducibility_next_day_california/
 bash ./run_all.sh
 ```
 
